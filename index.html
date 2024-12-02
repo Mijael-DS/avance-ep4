@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web</title>
+    <!-- fuentes google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!--nav navbar-dark bg-dark -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="logo">
+                    <img src="./img/icons8-desarrollo-web-64.png" alt="Logo">
+                </div>
+                <a class="navbar-brand" href="#">DevWeb</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portafolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Carousel -->
+        <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active">
+                    <div class="carousel-image"></div>
+                    <div class="carousel-caption">
+                        <h1>Diseño Web Moderno</h1>
+                        <p>Creamos sitios web que destacan.</p>
+                        <a href="#">Ver Informacion</a>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="carousel-image img2"></div>
+                    <div class="carousel-caption">
+                        <h2>Soluciones Personalizadas</h2>
+                        <p>Para negocios de cualquier tamaño.</p>
+                        <a href="#">Ver Informacion</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </main>
+
+    <!-- About Section -->
+    <section id="about" class="container my-5">
+        <h2 class="section-title">Sobre Nosotros</h2>
+        <p class="text-center">Somos expertos en desarrollo web, ofreciendo servicios personalizados para empresas y emprendedores que buscan destacar en el entorno digital.</p>
+    </section>
+
+    <!-- Cards Section -->
+    <section id="services" class="container my-5">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card custom-card">
+                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Diseño Web</h5>
+                        <p class="card-text">Diseños atractivos y funcionales para cualquier dispositivo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card custom-card">
+                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Desarrollo Frontend</h5>
+                        <p class="card-text">Interfases modernas y optimizadas para el usuario.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card custom-card">
+                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Soluciones Backend</h5>
+                        <p class="card-text">Sistemas robustos para cualquier negocio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container my-5">
+        <h2 class="section-title">Portafolio</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <video class="w-100" controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+            </div>
+            <div class="col-md-6">
+                <p>Explora nuestros proyectos de desarrollo web que han ayudado a negocios a crecer en el entorno digital.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+        <h2 class="section-title">Contáctanos</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+    <!-- grid -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Nuestros Servicios de Desarrollo Web</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Diseño Web">
+                    <div class="card-body">
+                        <h5 class="card-title">Diseño Web</h5>
+                        <p class="card-text">Creamos sitios web modernos y atractivos, optimizados para cualquier dispositivo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Desarrollo Backend">
+                    <div class="card-body">
+                        <h5 class="card-title">Desarrollo Backend</h5>
+                        <p class="card-text">Soluciones escalables y eficientes para la lógica de tus aplicaciones.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="SEO y Marketing">
+                    <div class="card-body">
+                        <h5 class="card-title">SEO y Marketing</h5>
+                        <p class="card-text">Mejoramos la visibilidad de tu sitio en buscadores con estrategias avanzadas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- video -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Video Promocional</h2>
+        <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" 
+                    title="Video de Desarrollo Web" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <!-- tabled -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Planes de Desarrollo Web</h2>
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Plan</th>
+                    <th>Características</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Básico</td>
+                    <td>Diseño responsive, 3 secciones</td>
+                    <td>$500</td>
+                </tr>
+                <tr>
+                    <td>Intermedio</td>
+                    <td>Diseño responsive, 5 secciones, SEO básico</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>Avanzado</td>
+                    <td>Diseño personalizado, SEO avanzado, integración de backend</td>
+                    <td>$2000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- formulario -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Contáctanos</h2>
+        <div class="row align-items-center">
+            <!-- Imagen -->
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="https://via.placeholder.com/500x400" 
+                     alt="Formulario de Contacto" 
+                     class="img-fluid rounded shadow">
+            </div>
+    
+            <!-- Formulario -->
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Redes Sociales -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase">Redes Sociales</h5>
+                    <div class="d-flex gap-3">
+                        <a href="https://www.facebook.com/" target="_blank" class="text-light">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="https://x.com/?lang=en" target="_blank" class="text-light">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank" class="text-light">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Información Personal -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase">Información</h5>
+                    <p><strong>Nombre:</strong> Mijael Alexander Dionicio Salazar</p>
+                    <p><strong>Teléfono:</strong></p>
+                    <ul class="list-unstyled">
+                        <li>907 415 261</li>
+                        <li>900 564 543</li>
+                    </ul>
+                </div>
+    
+                <!-- Instituto y Carrera -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase">Instituto y Carrera</h5>
+                    <p><strong>Institución:</strong> Isil</p>
+                    <p><strong>Ubicación:</strong> Lima, Villa el Salvador</p>
+                    <p><strong>Carrera:</strong> Desarrollo de Software</p>
+                    <p><strong>Año:</strong> 2024</p>
+                </div>
+            </div>
+    
+            <div class="row">
+                <!-- Docente -->
+                <div class="col text-center">
+                    <h6 class="text-uppercase">Docente: Roberto Inga Alvarado</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+</body>
+</html>
